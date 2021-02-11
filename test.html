@@ -25,7 +25,14 @@ Facebook Login Test!!!!
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 	
+check(){
+    FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+    });
+}
 </script>
+
+	<button onClick='check()'>Check </button>	
 	
 </body>
 </html>

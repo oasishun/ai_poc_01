@@ -26,8 +26,12 @@ Facebook Login Test!!!!
    }(document, 'script', 'facebook-jssdk'));
 	
 function check(){
+    console.log('CCCCCCCC');
     FB.getLoginStatus(function(response) {
+	console.log('FB.getLoginStatus');
+	console.log(response);
         statusChangeCallback(response);
+	    
     });
 }
 </script>
